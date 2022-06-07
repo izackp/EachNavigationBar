@@ -4,9 +4,7 @@ import PackageDescription
 let package = Package(
     name: "EachNavigationBar",
     platforms: [
-        .macOS(.v10_10),
-        .iOS(.v10),
-        .tvOS(.v10)
+        .iOS(.v10)
     ],
     products: [
         .library(
@@ -17,6 +15,7 @@ let package = Package(
     targets: [
         .target(
             name: "EachNavigationBar",
+            dependencies: [],
             path: "EachNavigationBar"
         )
     ]
