@@ -82,7 +82,7 @@ private extension UIViewController {
         let count = viewControllers.count
         
         let backButton = UIButton(type: .system)
-        let image = UIImage(named: "navigation_back_default", in: Bundle.current, compatibleWith: nil)
+        let image = UIImage(named: "navigation_back_default", in: Bundle.module, compatibleWith: nil)
         backButton.setImage(image, for: .normal)
         
         if let title = viewControllers[count - 2]._navigationItem.title {
